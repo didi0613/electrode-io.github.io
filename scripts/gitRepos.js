@@ -20,3 +20,11 @@ GitRepos.prototype.getIssuesUrl = function(repo) {
   var api = "api.";
   return repo.issues_url.replace(api, "");
 };
+
+GitRepos.prototype.getReleaseNotes = function() {
+  var electrodeReleaseNote = "https://api.github.com/repos/electrode-io/electrode/releases/latest";
+  return $.ajax({
+    url: electrodeReleaseNote,
+    method: "GET"
+  });
+}

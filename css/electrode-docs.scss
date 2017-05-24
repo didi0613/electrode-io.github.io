@@ -752,6 +752,22 @@ p a code {
   }
 }
 
+#news-section {
+  .left-side, .right-side {
+    display: inline-block;
+    width: 48%;
+    margin-right: 10px;
+  }
+
+  .left-side {
+    float: left;
+  }
+
+  .right-side {
+    float: right;
+  }
+}
+
 img[alt ^= "OTA:"] {
   width: 50%;
   transition: width .3s ease-in;
