@@ -5,8 +5,10 @@
   <div class="header-right-side">
     <ul class="header-menu">
       <li class="header-menu-item home"><a href="{{ site.baseurl }}/index.html">HOME</a></li>
-      <li class="header-menu-item docs {% if {{page.url}} != '/docs/contribute.html' and {{page.url}} != '/docs/community.html' %} selected {% endif %}"><a href="{{ site.baseurl }}/docs/what_is_electrode.html">DOCS</a></li>
+      <li class="header-menu-item docs {% if {{page.url}} != '/docs/contribute.html' and {{page.url}} != '/docs/community.html' and {{page.url}} != '/docs/news.html' %} selected {% endif %}"><a href="{{ site.baseurl }}/docs/what_is_electrode.html">DOCS</a></li>
       <li class="header-menu-item contribute {% if {{page.url}} == '/docs/contribute.html' or {{page.url}} == '/docs/community.html' %} selected {% endif %}"><a href="{{ site.baseurl }}/docs/contribute.html">CONTRIBUTE</a></li>
+      <li class="header-menu-item news {% if {{page.url}} == '/docs/news.html' or {{page.url}} == '/docs/news.html' %} selected {% endif %}"><a href="{{ site.baseurl }}/docs/news.html">NEWS</a></li>
+    </ul>
     </ul>
     <ul class="header-social">
       <li class="header-social-pocket"><a href="https://getpocket.com/"><img src="/img/pocket_@1x.png" /></a></li>
