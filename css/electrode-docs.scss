@@ -766,6 +766,24 @@ p a code {
   .right-side {
     float: right;
   }
+
+  .calendar-contents {
+    h4 {
+      color: #1686c0;
+    }
+
+    a {
+      display: block;
+    }
+
+    p a {
+      display: inline-block;
+    }
+  }
+
+  #blog a {
+    display: block;
+  }
 }
 
 img[alt ^= "OTA:"] {
